@@ -1,0 +1,287 @@
+<html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>App Travel</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="text-center">
+            <a href="index.html" title="Home page" class="logo">
+                <img src="images/logo.png" height="250" width="500" alt="Logo">
+            </a>
+
+            <nav class="navbar navbar-expand-sm justify-content-center red">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Начало</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link">За нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Галерия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactus.html" class="nav-link">Контакти</a>
+                    </li>
+                </li>
+                <li class="nav-item">
+                    <a href="map.html" class="nav-link">Карта</a>
+                </li>
+				<li class="nav-item">
+					<a href="table.html" class="nav-link">Таблица</a>
+				</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+<head> 
+<style> 
+#map { 
+height: 1500px; 
+width: 100%; 
+} 
+</style> 
+</head> 
+<body> 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?callback=initMap""></script> 
+<script language="javascript" type="text/javascript"> 
+
+var directionsDisplay; 
+var directionsService = new google.maps.DirectionsService(); 
+
+function InitializeMap() { 
+directionsDisplay = new google.maps.DirectionsRenderer(); 
+var latlng = new google.maps.LatLng(42.501, 27.468); 
+var myOptions = 
+{ 
+zoom: 13, 
+center: latlng, 
+mapTypeId: google.maps.MapTypeId.ROADMAP 
+}; 
+var map = new google.maps.Map(document.getElementById("map"), myOptions); 
+var myLatLng = new google.maps.LatLng(42.498655, 27.468535); 
+var marker = new google.maps.Marker({
+
+    
+    position: {lat: 42.49403526, lng: 27.4782089},
+
+    
+    map: map,
+
+ 
+    title: 'Археологически музей'
+});var contentString = '<div id="content">'+
+	      '<div id="siteNotice">'+
+	      '</div>'+
+	      '<h1 id="firstHeading" class="firstHeading">Археологически музей</h1>'+
+	      '<div id="bodyContent">'+
+	      '<p>Археологическата експозиция в Бургас е най-старият музей в Бургаска област, съхраняващ културно-историческото наследство на някои от най-древните градове в страната – Созопол, Несебър, Поморие и др. Създаден е като частен музей на Археологическото дружество „Дебелт“ през 1912 г..</p>'+
+	      '<p><b>Уикипедия:</b> <a href="https://bg.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%91%D1%83%D1%80%D0%B3%D0%B0%D1%81)" target="_blank">Археологически музей</a>'+
+	      '</p>'+
+	      '</div>'+
+	      '</div>';
+
+var infowindow = new google.maps.InfoWindow({
+	   content: contentString,
+	   maxWidth: 400
+	});
+
+	marker.addListener('click', function() {
+		infowindow.open(map, marker);
+	});
+	
+
+var marker2 = new google.maps.Marker({
+
+   
+    position: {lat: 42.49621947100813, lng:  27.475045043013715},
+
+   
+    map: map,
+
+    
+    title: 'Етнографски музей'
+});var contentString2 = '<div id="content">'+
+	      '<div id="siteNotice">'+
+	      '</div>'+
+	      '<h1 id="firstHeading" class="firstHeading">Етнографски музей</h1>'+
+	      '<div id="bodyContent">'+
+	      '<p>Етнографският музей в Бургас е част от Регионалния исторически музей – Бургас. Експозицията се намира в т.нар. „Бракалова къща“, построена през 1873 г. за видния общественик и кмет на Бургас Димитър Бракалов. Музеят се намира в центъра на Бургас, зад катедралния храм „Свети Кирил и Методий“</p>'+
+	      '<p><b>Уикипедия:</b> <a href="https://bg.wikipedia.org/wiki/%D0%95%D1%82%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%91%D1%83%D1%80%D0%B3%D0%B0%D1%81)" target="_blank">Етнографски музей</a>'+
+	      '</p>'+
+	      '</div>'+
+	      '</div>';
+
+var infowindow2 = new google.maps.InfoWindow({
+	   content: contentString2,
+	   maxWidth: 400
+	});
+
+	marker2.addListener('click', function() {
+		infowindow2.open(map, marker2);
+	});
+
+
+
+var marker3 = new google.maps.Marker({
+
+    
+    position: {lat: 42.579253359670346, lng:  27.475119546466885},
+
+    // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+    map: map,
+
+    
+    title: 'Атанасовско езеро'
+});var contentString3 = '<div id="content">'+
+	      '<div id="siteNotice">'+
+	      '</div>'+
+	      '<h1 id="firstHeading" class="firstHeading">Атанасовско езеро</h1>'+
+	      '<div id="bodyContent">'+
+	      '<p>Атанасовското езеро е езеро, разположено в границите на Бургас, между кварталите Изгрев и Сарафово и западно от тях. То е част от Бургаския езерен комплекс и граничи на изток чрез Атанасовска коса, която представлява около 1 km дълга пясъчна коса с Черно море. Езерото е крайбрежно и предлага голямо разнообразие на растителния и животинския свят, като част от тях са защитени от Закона за биологичното разнообразие и са световно застрашени. Атанасовското езеро е свързано чрез множество канали с Черно море, посредством които се отводнява. Общата площ на езерото е 7208,89 ха, с близо 9 км дължина и 4,3 км ширина, както 0,8 – 0,9 м дълбочина.</p>'+
+	      '<p><b>Уикипедия:</b> <a href="https://bg.wikipedia.org/wiki/%D0%90%D1%82%D0%B0%D0%BD%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%BE_%D0%B5%D0%B7%D0%B5%D1%80%D0%BE" target="_blank">Атанасовско езеро</a>'+
+	      '</p>'+
+	      '</div>'+
+	      '</div>';
+
+var infowindow3 = new google.maps.InfoWindow({
+	   content: contentString3,
+	   maxWidth: 400
+	});
+
+	marker3.addListener('click', function() {
+		infowindow3.open(map, marker3);
+	});
+
+var marker4 = new google.maps.Marker({
+
+   
+    position: {lat: 42.498113076320585, lng:  27.47066478440787},
+
+    
+    map: map,
+
+    
+    title: 'Паметник АЛЬОША'
+});var contentString4 = '<div id="content">'+
+	      '<div id="siteNotice">'+
+	      '</div>'+
+	      '<h1 id="firstHeading" class="firstHeading">Паметник АЛЬОША</h1>'+
+	      '<div id="bodyContent">'+
+	      '<p>Паметникът на Съветската армия („Альошата“) в Бургас изобразява съветски войник с издигната към небето лява ръка. Височината му е около 18 метра. Бронзовите релефи пресъздават сцени от Втората световна война и посрещането на съветските войски в Бургас. Намира се на централния бургаски площад „Тройката“. Построен е през 1952 – 1953 г. Автори са арх. Минко Минков и скулпторите Васил Радославов и Анета Атанасова.</p>'+
+	      '<p><b>Уикипедия:</b> <a href="https://bg.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BC%D0%B5%D1%82%D0%BD%D0%B8%D1%86%D0%B8_%D0%BD%D0%B0_%D0%A1%D1%8A%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%82%D0%B0_%D0%B0%D1%80%D0%BC%D0%B8%D1%8F_%D0%B2_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F#%D0%91%D1%83%D1%80%D0%B3%D0%B0%D1%81" target="_blank">Паметник АЛЬОША</a>'+
+	      '</p>'+
+	      '</div>'+
+	      '</div>';
+
+var infowindow4 = new google.maps.InfoWindow({
+	   content: contentString4,
+	   maxWidth: 400
+	});
+
+	marker4.addListener('click', function() {
+		infowindow4.open(map, marker4);
+	});
+
+
+var marker5 = new google.maps.Marker({
+
+    
+    position: {lat:42.50143553844417, lng: 27.482076140226905},
+
+    
+    map: map,
+
+    
+    title: 'Пантеон'});
+	var contentString5 = '<div id="content">'+
+	      '<div id="siteNotice">'+
+	      '</div>'+
+	      '<h1 id="firstHeading" class="firstHeading">Пантеона</h1>'+
+	      '<div id="bodyContent">'+
+	      '<p>Монументът Пантеон се намира в Морската градина на Бургас.Пантеонът в Морската градина е един от емблематичните паметници на Бургас. Построен е през 1981 година като мемориал на загиналите антифашисти. Автор на паметника е скулпторът Валентин Старчев, а проектант на градоустройството – архитект Владимир Милков. Преди промените през 1989 г. в централната част гори „вечен огън“, а през светлата част на денонощието пред символичния вход на паметника има почетен караул от ученици, облечени във военноморски униформи и въоръжени с реплики на автомат АК-47. Площадът около монумента оформя подхода към експозиционната част на морската градина, където се провежда и изложението за цветя „Флора Бургас“.</p>'+
+	      '<p><b>Уикипедия:</b> <a href="https://bg.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D0%BE%D0%BD_(%D0%91%D1%83%D1%80%D0%B3%D0%B0%D1%81)" target="_blank">Пантеон</a>'+
+	      '</p>'+
+	      '</div>'+
+	      '</div>';
+
+var infowindow5 = new google.maps.InfoWindow({
+	   content: contentString5,
+	   maxWidth: 400
+	});
+
+	marker5.addListener('click', function() {
+		infowindow5.open(map, marker5);
+	});
+
+directionsDisplay.setMap(map); 
+directionsDisplay.setPanel(document.getElementById('directionpanel')); 
+
+var control = document.getElementById('control'); 
+control.style.display = 'block'; 
+
+
+} 
+function calcRoute() { 
+
+var start = document.getElementById('startvalue').value; 
+var end = document.getElementById('endvalue').value; 
+var request = { 
+origin: start, 
+destination: end, 
+travelMode: google.maps.DirectionsTravelMode.DRIVING 
+}; 
+directionsService.route(request, function (response, status) { 
+if (status == google.maps.DirectionsStatus.OK) { 
+directionsDisplay.setDirections(response); 
+} 
+}); 
+
+} 
+
+function Button1_onclick() { 
+calcRoute(); 
+} 
+
+window.onload = InitializeMap; 
+
+
+</script> 
+
+
+<tr> 
+<td colspan ="3"> 
+<div id ="map" style="height: 478px; width: 100%; margin-top: 30px;" > 
+</div> 
+</td> 
+</tr> 
+</table> 
+<footer class="dark-background">
+            <div class="content-container">
+                <div class="flex-container">
+                    <div class="item">
+                        <h1>Централен офис</h1>
+                        <p>Бургас, ж.к. Възраждане, бл.55 партер</p>
+                    </div>
+                    <div class="item">
+                        <h1>Телефон</h1>
+                        <p>Моб.телефон: 088 497 3368</p> 
+                        
+                    </div>
+                    <div class="item">
+                        <h1>Имейл</h1>
+                        <p>e-mail: apptravel@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body> 
+</html>

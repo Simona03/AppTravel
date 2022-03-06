@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>App Travel</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header class="text-center">
+            <a href="index.html" title="Начална страница" class="logo">
+                <img src="images/logo.png" height="250" width="500" alt="Logo">
+            </a>
+
+            <nav class="navbar navbar-expand-sm justify-content-center red">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Начало</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link">За нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Галерия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactus.html" class="nav-link">Контакти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link">Карта</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="table.html" class="nav-link">Таблица</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+              
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/ochi.jpg" alt="teeth" width="1519" height="700">
+                            <div class="carousel-caption">
+                                <h3>Божиите Очи</h3>
+                                <p>Пещера Проходна</p>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/land.jpg" alt="blue" width="1519" height="700" >
+                            <div class="carousel-caption">
+                                <h3>Плаж Болата</h3>
+                                <p>Близо до Варна</p>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/lake.jpg" alt="whitemoun" width="1519" height="700">
+                            <div class="carousel-caption">
+                                <h3>Седемте Рилски Езера</h3>
+                                <p>В Рила планина</p>
+                              </div>
+                        </div>
+                    </div>
+              
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div> 
+                <div class="jumbotron mt-5">
+                    <h1>Добре Дошли!</h1>
+                    <p>В нашият сайт ще откриете информация за забележителностите в България, но и около света. 
+                        AppTravel сбъдва мечти, ако искате да пътувате, то той ще Ви помогне. 
+                        В нашата страница има не само информация, но и карта, която ще Ви насочи към правилното място.
+                        Вярно е, че пътуванията обогатяват по неповторим начин и веднъж вкусил от сладостта им, 
+                        човек не може да спре. Той планира и си представя как и кога ще му се отдаде възможност да 
+                        поеме на път отново. Усещане, което не може да се опише с думи. То трябва да се изживее!
+                    </p>
+                  </div>
+                <div class="creatures-list">
+                    <h1 class="text-uppercase">Забележителности</h1>
+                    <ul class="creatures">
+                        <li class="creature-item">
+                            <img src="images/god.jpg" class="img-fluid img-thumbnail" alt="Eyes" >
+                            <a href="https://www.fixstay.com/bg/article/39/the-eyes-of-god.html">Божиите Очи</a>
+                        </li>
+                        <li class="creature-item">
+                            <img src="images/beach.jfif" class="img-fluid img-thumbnail" alt="Beach">
+                            <a href="https://saveti.bg/bolata/">Плаж Болата</a>
+                            
+                        </li>
+                        <li class="creature-item">
+                            <img src="images/eii.jpg" class="img-fluid img-thumbnail" alt="Lakes">
+                            <a href="https://bg.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B4%D0%B5%D0%BC%D1%82%D0%B5_%D1%80%D0%B8%D0%BB%D1%81%D0%BA%D0%B8_%D0%B5%D0%B7%D0%B5%D1%80%D0%B0">Седемте Рилски Езера</a>
+
+                        </li>
+                        <li class="creature-item">
+                            <img src="images/water.jpeg" class="img-fluid img-thumbnail" alt="Waterfall">
+                            <a href="https://opoznai.bg/view/krushunski-vodopadi">Крушунски водопади</a>
+                        </li>
+                </div>          
+        </main>
+        <footer class="dark-background">
+            <div class="content-container">
+                <div class="flex-container">
+                    <div class="item">
+                        <h1>Централен офис</h1>
+                        <p>Бургас, ж.к. Възраждане, бл.55 партер</p>
+                    </div>
+                    <div class="item">
+                        <h1>Телефон</h1>
+                        <p>Моб.телефон: 088 497 3368</p> 
+                        
+                    </div>
+                    <div class="item">
+                        <h1>Имейл</h1>
+                        <p>e-mail: apptravel@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+*, html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.logo {
+    margin:80px 0;
+    display: block;
+}
+
+.red{
+    background: #eba556;
+}
+
+
+.nav-link {
+    color: rgb(1, 5, 7);
+    font-size: 20px;
+    padding:0;
+}
+
+.nav-link:hover{
+    color:#ffffff
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.content-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container .item {
+    width: 80%;
+    padding: 50px 0;
+}
+
+.item h1 {
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.dark-background {
+    background: rgb(51, 51, 51);
+    color: #ffffff;    
+}
+
+.dark-background a {
+    color: rgb(0, 162, 255);
+}
+
+.creatures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.creature-item{
+    width: 20%;
+    list-style: none;
+    
+}
+
+.creature-item .creature-title{
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.werewolf-container{
+    display: flex;
+    margin: 10px;
+}
+.font-italic{
+     position: 100px;
+     margin: 10px;
+     
+}
+
+.text-uppercase{
+    margin: 30px;
+}
+
+.btn:focus,
+.btn:active,
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer {
+    display: block;
+  }
+  
+  .thumb {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+.center-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}  
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f1b457;
+    color: white;
+  }
+  
+  #customers td, #customers th {
+    border: 2px solid #ddd;
+    padding: 10px;
+    
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: #e6ae5a;
+    color: white;
+  }
+.center-class{
+    margin-left: auto;
+  margin-right: auto;
+}
